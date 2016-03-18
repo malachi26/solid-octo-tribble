@@ -1,12 +1,22 @@
-﻿
-<h2>Home</h2>
+﻿<div ng-controller="homeCtrl">
+    <h2>Home</h2>
 
-<table>
-    <tr><th>row number</th></tr>
-    <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
-        <td ng-repeat="j in [0,1,2,3,4,5,6,7]">{{(i+1)*j}}</td>
-    </tr>
-</table>
+    <div class="col-md-10 col-md-offset-1">
+        <table>
+            <tr><th ng-repeat="k in [0, 1, 2, 3, 4, 5, 6, 7]">Column {{k + 1}}</th></tr>
+            <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+                <td ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7]"> {{(i+1)*(j+1)}}</td>
+            </tr>
+        </table>
+    </div>
 
-
+    <div class="col-md-10 col-md-offset-1">
+        <table>
+            <tr><th ng-repeat="num in k ">Column {{num + 1}}</th></tr>
+            <tr ng-repeat="i in k">
+                <td ng-repeat="j in k"> {{(i+1)*(j+1)}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
 

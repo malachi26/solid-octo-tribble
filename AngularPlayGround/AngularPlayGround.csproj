@@ -174,7 +174,6 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppController.cs" />
-    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\WS_AccountController.cs" />
     <Compile Include="Controllers\WS_TodoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -242,7 +241,6 @@
     <Content Include="Assets\ng\angular-resource.min.js.map" />
     <Content Include="Assets\ng\angular-route.min.js.map" />
     <Content Include="Assets\ng\angular.min.js.map" />
-    <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\App\Home.cshtml" />
     <Content Include="Views\App\Register.cshtml" />
     <Content Include="Views\App\SignIn.cshtml" />
